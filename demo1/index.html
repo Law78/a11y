@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A11y - Demo 1</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body role="application">
+  <a class="skip-main" href="#main">Skip to main content</a>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="display: inherit;"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="demo1.html">Demo1</a></li>
+        <li><a href="demo2.html">Demo2</a></li>
+        <li><input value="1" onchange="changeEye()" type="number" name="eye" id="eye"></li>
+      </ul>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+      
+    </ul>
+  </nav>
+
+  
+
+  <main id="main">
+    <h1>
+      Frontend Magazine
+    </h1>
+    <section>
+      <h2>Intro Angular</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eos totam, perferendis quia eum quibusdam neque unde, sapiente iure nesciunt cupiditate exercitationem doloribus autem nobis illum earum architecto ut! Error?</p>
+      <a href="#">Read More</a>
+      <h2>Angular CLI</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eos totam, perferendis quia eum quibusdam neque unde, sapiente iure nesciunt cupiditate exercitationem doloribus autem nobis illum earum architecto ut! Error?</p>
+      <a href="#">Read More</a>
+
+    </section>
+    <span class="waves-effect waves-light btn">Cliccami</span>
+    <span role="button" tabindex="0" class="waves-effect waves-light btn">Cliccami</span>
+    
+    <div>
+      <p id="res"></p>
+      <form id="form" onsubmit="Submit(event);">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Scrivi il tuo nome">
+        <button class="waves-effect waves-light btn" type="submit">Invia</button>
+        <a role="button" href="sass.html">Assistenza</a>
+        <a href="sass.html">Email</a>
+      </form>
+    </div>
+
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
